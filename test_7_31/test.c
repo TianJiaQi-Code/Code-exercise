@@ -4,45 +4,64 @@
 #include<stdio.h>
 #include<math.h>
 
-int main()
-{
-	int line = 0;
-	scanf("%d", &line);
-	//打印上半部分
-	int i = 0;
-	for (i = 0; i < line; i++)
-	{
-		//打印空格
-		int j = 0;
-		for (j = 0; j < line - 1 - i; j++)
-		{
-			printf(" ");
-		}
-		//打印*
-		for (j = 0; j < 2 * i + 1; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	//打印下半部分
-	for (i = 0; i < line - 1 ; i++)
-	{
-		int j = 0;
-		//打印空格
-		for (j = 0; j <= i; j++)
-		{
-			printf(" ");
-		}
-		//打印*
-		for (j = 0; j < 2*(line-1-i)-1; j++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
-	return 0;
-}
+
+
+//int main()
+//{
+//	int money = 0;
+//	int total = 0;
+//	int empty = 0;
+//	scanf("%d", &money);
+//	total = money;
+//	empty = money;
+//	while (empty >= 2)
+//	{
+//		total += empty / 2;
+//		empty = empty / 2 + empty % 2;
+//	}
+//	printf("total = %d\n", total);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int line = 0;
+//	scanf("%d", &line);
+//	//打印上半部分
+//	int i = 0;
+//	for (i = 0; i < line; i++)
+//	{
+//		//打印空格
+//		int j = 0;
+//		for (j = 0; j < line - 1 - i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0; j < 2 * i + 1; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	//打印下半部分
+//	for (i = 0; i < line - 1 ; i++)
+//	{
+//		int j = 0;
+//		//打印空格
+//		for (j = 0; j <= i; j++)
+//		{
+//			printf(" ");
+//		}
+//		//打印*
+//		for (j = 0; j < 2*(line-1-i)-1; j++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
 
 //int main()
 //{
